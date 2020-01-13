@@ -1,0 +1,70 @@
+{
+	"rulesDirectory": ["tslint-plugin-prettier"],
+	"extends": ["tslint-config-standard", "tslint-config-prettier"],
+	"rules": {
+		"strict-type-predicates": true,
+		"no-restricted-globals": true,
+		"strict-boolean-expressions": true,
+		"strict-comparisons": true,
+		"strict-string-expressions": true,
+		"triple-equals": true,
+		"switch-default": true,
+		"deprecation": true,
+		"invalid-void": true,
+		"arrow-return-shorthand": false,
+		"align": true,
+		"array-type": [true, "generic"],
+		"cyclomatic-complexity": [ true, 20 ],
+		"encoding": true,
+		"eofline": true,
+		"member-access": true,
+		"no-consecutive-blank-lines": true,
+		"no-duplicate-super": true,
+		"no-duplicate-variable": true,
+		"no-require-imports": true,
+		"no-var-keyword": true,
+		"prefer-const": true,
+		"prefer-switch": true,
+		"prefer-template": true,
+		"no-magic-numbers": [
+			true
+		],
+		"member-ordering": [
+			true,
+			{
+				"order": [
+					"public-static-field",
+					"protected-static-field",
+					"private-static-field",
+					"static-field",
+					"public-static-method",
+					"protected-static-method",
+					"private-static-method",
+					"static-method",
+					"public-instance-field",
+					"protected-instance-field",
+					"private-instance-field",
+					"instance-field",
+					"public-constructor",
+					"protected-constructor",
+					"private-constructor",
+					"constructor",
+					"public-instance-method",
+					"protected-instance-method",
+					"private-instance-method",
+					"instance-method"
+				]
+			}
+		],
+		"prettier": [
+			true, {
+				"singleQuote": true,
+				"semi": true,
+			    "tabWidth": 4,
+				"useTabs": true,
+				"printWidth": 240,
+				"arrowParens": "always"
+			}
+		]
+	}
+}
